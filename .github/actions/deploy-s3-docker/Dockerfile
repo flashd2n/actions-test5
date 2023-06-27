@@ -22,9 +22,9 @@ RUN apk add --update docker
 
 COPY --from=kubectl /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/
 
-COPY ./package*.json /home/node/app
-
 WORKDIR /home/node/app
+
+COPY ./package*.json /home/node/app
 
 RUN npm install
 
