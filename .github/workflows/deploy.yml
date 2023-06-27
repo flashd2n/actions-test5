@@ -69,6 +69,7 @@ jobs:
           AWS_ACCESS_KEY_ID: "very secret"
           AWS_SECRET_ACCESS_KEY: "much key"
           AWS_REGION: "wow"
+          DIR_LOC: ${{ github.workspace }}
         with:
           bucket: "really bucket"
           bucket-region: "some bucket region"
