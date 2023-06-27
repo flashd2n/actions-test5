@@ -2,6 +2,8 @@ FROM --platform=linux/amd64 bitnami/kubectl:1.27.3 as kubectl
 
 FROM --platform=linux/amd64 node:18-alpine
 
+WORKDIR /home/node/app
+
 RUN apk update && apk add --update --no-cache \
     git \
     bash \
@@ -28,4 +30,4 @@ RUN npm install
 
 COPY . .
 
-CMD [ "node", "./src/index.js" ]
+CMD [ "node", "/home/node/app/src/index.js" ]
