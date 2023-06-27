@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const run = async () => {
 
     const bucket = process.env.INPUT_BUCKET;
@@ -11,8 +13,8 @@ const run = async () => {
 
     const websiteUrl = "ulalla";
 
-    console.log(`website-url=${websiteUrl}` >> $GITHUB_OUTPUT);
-
+    const output = process.env['GITHUB_OUTPUT']
+    fs.appendFileSync(output, `website-url=${websiteUrl}`);
 };
 
 run();
