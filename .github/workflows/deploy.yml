@@ -75,7 +75,7 @@ jobs:
           dist-folder: "dist"
       - name: Output info
         run: |
-          echo ${{ steps.deploy-s3-js.outputs.website-url }}
+          echo ${{ steps.deploy-s3-docker.outputs.website-url }}
 
       # - name: Run JS action
       #   id: deploy-s3-js
