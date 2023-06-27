@@ -11,7 +11,7 @@ const run = async () => {
 
     const websiteUrl = "ulalla";
 
-    console.log(`website-url=${websiteUrl} >> $GITHUB_OUTPUT`);
+    console.log(`"website-url=${websiteUrl}" >> $GITHUB_OUTPUT`);
 
 };
 
