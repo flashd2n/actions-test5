@@ -1,8 +1,8 @@
 const run = async () => {
 
     const bucket = process.env.INPUT_BUCKET;
-    const bucketRegion = process.env.INPUT_BUCKET-REGION;
-    const distFolder = process.env.INPUT_DIST-FOLDER;
+    const bucketRegion = process.env["INPUT_BUCKET-REGION"];
+    const distFolder = process.env["INPUT_DIST-FOLDER"];
 
     console.log("does it work?")
     console.log(bucket);
