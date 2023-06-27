@@ -13,6 +13,10 @@ const run = async () => {
 
     const websiteUrl = "ulalla";
 
+    fs.readdirSync(process.env["GITHUB_WORKSPACE"]).forEach(file => {
+        console.log(file);
+    });
+
     const output = process.env['GITHUB_OUTPUT']
     fs.appendFileSync(output, `website-url=${websiteUrl}`);
 };
