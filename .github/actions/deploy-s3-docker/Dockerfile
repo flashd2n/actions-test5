@@ -20,8 +20,6 @@ RUN pip install --upgrade pip && \
 
 RUN apk add --update docker
 
-WORKDIR /home/node/app
-
 COPY --from=kubectl /opt/bitnami/kubectl/bin/kubectl /usr/local/bin/
 
 COPY ./package*.json .
