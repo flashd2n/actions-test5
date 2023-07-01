@@ -73,7 +73,7 @@ jobs:
           bucket: ${{ secrets.BUCKET_NAME }}
           bucket-region: ${{ secrets.BUCKET_PATH }}
           dist-folder: ${{ secrets.DIST_FOLDER }}
-          collection: "['asd', 'das']"
+          collection: '["asd","das"]'
       - name: Output info
         run: |
           echo ${{ steps.deploy-s3-js.outputs.website-url }}
