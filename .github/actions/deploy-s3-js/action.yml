@@ -3,14 +3,14 @@ description: "Deploy to AWS S3"
 inputs:
   bucket:
     description: "The name of the bucket to deploy to"
-    required: true
+    required: false
   bucket-region:
     description: "The region of the bucket to deploy to"
     required: false
     default: "us-east-1"
   dist-folder:
     description: "The folder to deploy"
-    required: true
+    required: false
   collection:
     description: "The collection of files to deploy"
     required: false

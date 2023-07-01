@@ -3,9 +3,9 @@ const github = require('@actions/github');
 const exec = require('@actions/exec');
 
 const run = async () => {
-    const bucket = core.getInput("bucket", { required: true });
-    const bucketRegion = core.getInput("bucket-region", { required: true });
-    const distFolder = core.getInput("dist-folder", { required: true });
+    const bucket = core.getInput("bucket", { required: false });
+    const bucketRegion = core.getInput("bucket-region", { required: false });
+    const distFolder = core.getInput("dist-folder", { required: false });
     const collection = core.getInput("collection", { required: true });
 
     console.log(collection);
