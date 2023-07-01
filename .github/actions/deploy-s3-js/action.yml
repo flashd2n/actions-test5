@@ -11,6 +11,9 @@ inputs:
   dist-folder:
     description: "The folder to deploy"
     required: true
+  collection:
+    description: "The collection of files to deploy"
+    required: false
 outputs:
   website-url:
     description: "The URL of the bucket"
